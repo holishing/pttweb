@@ -7,10 +7,10 @@ go:
 go_import_path: github.com/ptt/pttweb
 
 sudo: required
-dist: trusty
+dist: stretch
 
 install:
-    - sudo add-apt-repository 'deb http://old-releases.ubuntu.com/ubuntu/ yakkety main'
+    - sudo add-apt-repository 'deb http://deb.debian.org/debian stretch-backports main'
     - sudo apt-get -qq update
     - sudo apt-get install -y protobuf-compiler
     - go get google.golang.org/grpc
